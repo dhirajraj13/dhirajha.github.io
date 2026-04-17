@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhiraj Raj | Computational Chemist & PhD Researcher</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Bebas Neue (display) + DM Sans (body) + Fira Code (mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ────────────────────────── CURSOR ────────────────────────── -->
+  <div id="cursor-glow"></div>
+
+  <!-- ────────────────────────── NAV ────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">DR<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about"      class="nav-link">About</a></li>
+        <li><a href="#skills"     class="nav-link">Skills</a></li>
+        <li><a href="#projects"   class="nav-link">Research</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education"  class="nav-link">Education</a></li>
+        <li><a href="#achievements" class="nav-link">Awards</a></li>
+        <li><a href="#contact"    class="nav-link cta-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about"        class="mob-link">About</a>
+      <a href="#skills"       class="mob-link">Skills</a>
+      <a href="#projects"     class="mob-link">Research</a>
+      <a href="#experience"   class="mob-link">Experience</a>
+      <a href="#education"    class="mob-link">Education</a>
+      <a href="#achievements" class="mob-link">Awards</a>
+      <a href="#contact"      class="mob-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ────────────────────────── HERO ────────────────────────── -->
+  <section id="hero">
+    <!-- Decorative blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <!-- Deep Dark Theme Elements -->
+    <div class="hero-glow"></div>
+    <div class="hero-noise"></div>
+
+    <!-- Floating particles -->
+    <canvas id="particleCanvas"></canvas>
+
+    <div class="hero-content centered">
+      <!-- Centered text column -->
+      <div class="hero-center">
+        <p class="hero-greeting reveal-fade" style="--d:.1s">Hi, I am</p>
+
+        <h1 class="hero-name" id="heroName">
+          <span class="name-white">Dhiraj </span><span class="name-accent">Raj</span><span class="typewriter-cursor">|</span>
+        </h1>
+
+        <p class="hero-role reveal-fade" style="--d:.4s">Computational Chemist & PhD Researcher</p>
+
+        <p class="hero-location reveal-fade" style="--d:.5s">
+          Based at Stony Brook University, NY 🇺🇸
+        </p>
+
+        <p class="hero-desc reveal-fade" style="--d:.6s">
+          Bridging Quantum Mechanics & Machine Learning to unravel nonadiabatic
+          molecular dynamics and accelerate materials discovery. Specializing in
+          Ehrenfest dynamics, DFT, CASPT2, and data-driven battery research.
+        </p>
+
+        <div class="hero-socials reveal-fade" style="--d:.7s">
+          <a href="https://github.com/dhirajraj13" target="_blank" class="social-icon" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/dhiraj-raj-074b89179/" target="_blank" class="social-icon" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:dhiraj.raj@stonybrook.edu" class="social-icon" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </a>
+        </div>
+
+        <div class="hero-actions reveal-fade" style="--d:.8s">
+          <a href="#projects" class="btn btn-primary">View Projects →</a>
+          <a href="CV_March_26.pdf" target="_blank" class="btn btn-outline">Resume ↓</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator reveal-fade" style="--d:1.2s">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+    </div>
+  </section>
+
+  <!-- ────────────────────────── ABOUT ────────────────────────── -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Photo side -->
+        <div class="about-photo-wrap reveal-left">
+          <div class="photo-frame">
+            <img src="images/profile.png" alt="Dhiraj Raj" class="profile-img"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <!-- Fallback avatar if image not present -->
+            <div class="avatar-fallback">
+              <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="42" r="26" fill="#d4a843" opacity=".6"/>
+                <ellipse cx="60" cy="108" rx="44" ry="30" fill="#d4a843" opacity=".4"/>
+              </svg>
+              <span class="mono" style="color:#f0c060;font-size:.75rem;margin-top:.5rem">images/profile.png</span>
+            </div>
+            <!-- Decorative ring -->
+            <div class="photo-ring"></div>
+          </div>
+
+          <!-- Quick stats -->
+          <div class="stats-grid">
+            <div class="stat-box">
+              <span class="stat-num">3.84</span>
+              <span class="stat-lbl">PhD GPA</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-num">8.88</span>
+              <span class="stat-lbl">M.Sc. CPI</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-num">AIR 77</span>
+              <span class="stat-lbl">NET JRF</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-num">5+</span>
+              <span class="stat-lbl">Projects</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text side -->
+        <div class="about-text reveal-right">
+          <p class="section-tag mono">// About Me</p>
+          <h2 class="section-title">Computational Chemist<br>& Quantum Researcher</h2>
+          <p class="body-text">
+            I'm a <strong>PhD Researcher at Stony Brook University</strong>, focusing on the evolution of
+            electronic coherence in molecular systems using Ehrenfest dynamics. My work bridges
+            rigorous electronic structure methods with modern AI/ML tools to advance sustainable
+            energy science.
+          </p>
+          <p class="body-text">
+            With an M.Sc. from <strong>IIT Guwahati</strong> (CPI 8.88/10), I've worked on excited-state
+            photochemistry, green hydrogen catalysis, and data-driven battery materials — combining
+            theory, computation, and machine learning into a cohesive research philosophy.
+          </p>
+          <p class="body-text">
+            Beyond research, I serve as a <strong>Graduate Teaching Assistant</strong> at SBU, an
+            <strong>Executive Board Member</strong> of the Indian Graduate Student Association, and a
+            member of the American Chemical Society.
+          </p>
+          <div class="about-links">
+            <a href="https://www.linkedin.com/in/dhiraj-raj-074b89179/" target="_blank" class="icon-link">
+              <!-- LinkedIn icon -->
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/dhirajraj13" target="_blank" class="icon-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="mailto:dhiraj.raj@stonybrook.edu" class="icon-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              Email
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ────────────────────────── SKILLS ────────────────────────── -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-tag mono">// Tech Stack</p>
+        <h2 class="section-title">Scientific &amp; Technical<br>Toolkit</h2>
+      </div>
+
+      <!-- Tab buttons -->
+      <div class="tab-row reveal-up">
+        <button class="tab-btn active" data-tab="software">Comp. Software</button>
+        <button class="tab-btn" data-tab="coding">Coding &amp; AI</button>
+        <button class="tab-btn" data-tab="lab">Lab &amp; Tools</button>
+      </div>
+
+      <!-- Software tab -->
+      <div class="tab-pane active" id="tab-software">
+        <div class="skill-cards reveal-up">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="https://cdn.simpleicons.org/python/d4a843" alt="Python" onerror="this.style.display='none'">
+              <span class="skill-fallback">Py</span>
+            </div>
+            <span class="skill-name">Python</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon skill-text-icon">VASP</div>
+            <span class="skill-name">VASP</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon skill-text-icon">G16</div>
+            <span class="skill-name">Gaussian</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon skill-text-icon">ORCA</div>
+            <span class="skill-name">Orca</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon skill-text-icon">ASE</div>
+            <span class="skill-name">ASE</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon skill-text-icon">MWfn</div>
+            <span class="skill-name">Multiwfn</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon skill-text-icon">MOLP</div>
+            <span class="skill-name">Molpro</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon skill-text-icon">TURB</div>
+            <span class="skill-name">Turbomol</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon skill-text-icon">PyMOL</div>
+            <span class="skill-name">PyMOL</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon skill-text-icon">GMSS</div>
+            <span class="skill-name">Gamess</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="https://cdn.simpleicons.org/pytorch/d4a843" alt="PyTorch" onerror="this.style.display='none'">
+              <span class="skill-fallback">PT</span>
+            </div>
+            <span class="skill-name">PyTorch</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="https://cdn.simpleicons.org/git/d4a843" alt="Git" onerror="this.style.display='none'">
+              <span class="skill-fallback">Git</span>
+            </div>
+            <span class="skill-name">Git</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coding tab -->
+      <div class="tab-pane" id="tab-coding">
+        <div class="skill-bars reveal-up">
+          <div class="bar-row">
+            <div class="bar-label">
+              <span>Python</span><span class="bar-level">Advanced</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" data-w="88"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">
+              <span>Fortran</span><span class="bar-level">Intermediate</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" data-w="60"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">
+              <span>Bash / Slurm</span><span class="bar-level">Intermediate</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" data-w="65"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">
+              <span>OpenAI API / LangChain</span><span class="bar-level">Intermediate</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" data-w="55"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">
+              <span>ML / Prompt Engineering</span><span class="bar-level">Intermediate</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" data-w="62"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">
+              <span>LaTeX / Overleaf</span><span class="bar-level">Advanced</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" data-w="82"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lab tab -->
+      <div class="tab-pane" id="tab-lab">
+        <div class="pill-cloud reveal-up">
+          <span class="pill">UV-VIS Spectrophotometer</span>
+          <span class="pill">NMR Spectroscopy</span>
+          <span class="pill">IR Spectroscopy</span>
+          <span class="pill">Fluorescence Spectrophotometer</span>
+          <span class="pill">Linux / CentOS / Windows</span>
+          <span class="pill">Jupyter Notebook</span>
+          <span class="pill">Anaconda</span>
+          <span class="pill">Overleaf / LaTeX</span>
+          <span class="pill">Team Leadership</span>
+          <span class="pill">Mentorship</span>
+          <span class="pill">Scientific Presentation</span>
+          <span class="pill">HPC / SLURM Clusters</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ────────────────────────── RESEARCH / PROJECTS ────────────────────────── -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-tag mono">// Research Portfolio</p>
+        <h2 class="section-title">Projects &amp; Investigations</h2>
+        <p class="section-sub">Click any card for details.</p>
+      </div>
+
+      <div class="project-grid">
+
+        <!-- Project 1 -->
+        <div class="proj-card reveal-up" style="--d:.05s">
+          <div class="proj-thumb proj-thumb-1">
+            <img src="images/project1.png" alt="Electronic Coherence" onerror="this.style.display='none'">
+            <div class="proj-overlay">
+              <span class="proj-num mono">01</span>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <span class="proj-tag">Nonadiabatic Dynamics</span>
+              <span class="proj-date mono">Jan 2026 – Present</span>
+            </div>
+            <h3 class="proj-title">Electronic Coherence, Decoherence &amp; Recoherence</h3>
+            <p class="proj-desc collapsed">
+              Investigates the evolution of electronic coherence in molecular systems using
+              Ehrenfest dynamics with the TAB method to model decoherence and explores
+              recoherence phenomena in nonadiabatic molecular dynamics.
+            </p>
+            <div class="proj-footer">
+              <span class="chip">Ehrenfest Dynamics</span>
+              <span class="chip">Gaussian</span>
+              <span class="chip">Fortran</span>
+              <span class="chip">TAB Method</span>
+              <button class="expand-btn" aria-label="Expand">▾</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="proj-card reveal-up" style="--d:.1s">
+          <div class="proj-thumb proj-thumb-2">
+            <img src="images/project2.png" alt="Green Hydrogen" onerror="this.style.display='none'">
+            <div class="proj-overlay">
+              <span class="proj-num mono">02</span>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <span class="proj-tag">Catalysis / Green H₂</span>
+              <span class="proj-date mono">Nov 2025 – Jan 2026</span>
+            </div>
+            <h3 class="proj-title">Oxygen Evolution Reaction on IrO₂ and Related Oxides</h3>
+            <p class="proj-desc collapsed">
+              DFT-based catalytic pathway analysis identifying active sites, reaction energetics,
+              and stability trends relevant for improving water-splitting performance — an essential
+              step in green hydrogen production.
+            </p>
+            <div class="proj-footer">
+              <span class="chip">DFT</span>
+              <span class="chip">VASP</span>
+              <span class="chip">Water Splitting</span>
+              <button class="expand-btn" aria-label="Expand">▾</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="proj-card reveal-up" style="--d:.15s">
+          <div class="proj-thumb proj-thumb-3">
+            <img src="images/project3.png" alt="Li-Ion Battery ML" onerror="this.style.display='none'">
+            <div class="proj-overlay">
+              <span class="proj-num mono">03</span>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <span class="proj-tag">Machine Learning</span>
+              <span class="proj-date mono">Oct – Nov 2025</span>
+            </div>
+            <h3 class="proj-title">Li-Ion Battery Free Energy Predictions via ML</h3>
+            <p class="proj-desc collapsed">
+              Developed ML models to evaluate and rank key physical and chemical descriptors
+              for predicting free energy in Li-ion battery systems, supporting faster and more
+              reliable materials screening.
+            </p>
+            <div class="proj-footer">
+              <span class="chip">Machine Learning</span>
+              <span class="chip">Python</span>
+              <span class="chip">Li-Ion Batteries</span>
+              <button class="expand-btn" aria-label="Expand">▾</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="proj-card reveal-up" style="--d:.2s">
+          <div class="proj-thumb proj-thumb-4">
+            <img src="images/project4.png" alt="XPES Spectroscopy" onerror="this.style.display='none'">
+            <div class="proj-overlay">
+              <span class="proj-num mono">04</span>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <span class="proj-tag">Spectroscopy</span>
+              <span class="proj-date mono">Aug – Oct 2025</span>
+            </div>
+            <h3 class="proj-title">XPES Signatures in Salicylideneaniline</h3>
+            <p class="proj-desc collapsed">
+              Computational investigation using CASPT2 and DFT to advance accurate
+              computational spectroscopy and validate methodological consistency in predicting
+              core-level ionization energies for complex organic systems.
+            </p>
+            <div class="proj-footer">
+              <span class="chip">CASPT2</span>
+              <span class="chip">DFT</span>
+              <span class="chip">XPES</span>
+              <button class="expand-btn" aria-label="Expand">▾</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 – full width -->
+        <div class="proj-card proj-card-wide reveal-up" style="--d:.25s">
+          <div class="proj-thumb proj-thumb-5">
+            <img src="images/project5.png" alt="Master Thesis" onerror="this.style.display='none'">
+            <div class="proj-overlay">
+              <span class="proj-num mono">05</span>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <span class="proj-tag">Master's Thesis</span>
+              <span class="proj-date mono">May 2024 – May 2025</span>
+            </div>
+            <h3 class="proj-title">Effect of Fluorination on Excited-State Properties in N-Salicylideneaniline</h3>
+            <p class="proj-desc collapsed">
+              Conducted electronic structure calculations to study how fluorination modulates
+              the excited-state properties of N-Salicylideneaniline. The research aims to improve
+              optoelectronic properties by understanding photophysical and photochemical behaviour
+              under substituent effects. Supervisor: Prof. Aditya N. Panda, IIT Guwahati.
+            </p>
+            <div class="proj-footer">
+              <span class="chip">Electronic Structure</span>
+              <span class="chip">Gaussian</span>
+              <span class="chip">Excited States</span>
+              <span class="chip">Optoelectronics</span>
+              <button class="expand-btn" aria-label="Expand">▾</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ────────────────────────── EXPERIENCE ────────────────────────── -->
+  <section id="experience" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-tag mono">// Experience</p>
+        <h2 class="section-title">Positions &amp; Roles</h2>
+      </div>
+
+      <div class="timeline">
+
+        <div class="tl-item reveal-left" style="--d:.05s">
+          <div class="tl-dot tl-dot-red"></div>
+          <div class="tl-card">
+            <span class="tl-period mono">Aug 2025 – Present</span>
+            <h3 class="tl-role">Graduate Teaching Assistant</h3>
+            <p class="tl-org">Stony Brook University, New York</p>
+            <p class="tl-desc">Managing laboratory sections for CHE-131/132 (General Chemistry). Mentoring undergraduates in computational methodology and chemical dynamics.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal-left" style="--d:.1s">
+          <div class="tl-dot tl-dot-maroon"></div>
+          <div class="tl-card">
+            <span class="tl-period mono">Jan 2026 – Present</span>
+            <h3 class="tl-role">Executive Board Member — IGSA</h3>
+            <p class="tl-org">Indian Graduate Student Association, SBU</p>
+            <p class="tl-desc">Serving on the executive board of the Indian Graduate Student Association at Stony Brook University, representing and supporting the Indian student community.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal-left" style="--d:.15s">
+          <div class="tl-dot tl-dot-rose"></div>
+          <div class="tl-card">
+            <span class="tl-period mono">Oct 2025 – Present</span>
+            <h3 class="tl-role">Member — American Chemical Society</h3>
+            <p class="tl-org">ACS</p>
+            <p class="tl-desc">Active member contributing to the chemistry community through professional development and scientific discourse.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal-left" style="--d:.2s">
+          <div class="tl-dot tl-dot-maroon"></div>
+          <div class="tl-card">
+            <span class="tl-period mono">Sep 2023 – Apr 2024</span>
+            <h3 class="tl-role">Team Leader — SOPAN Super 20</h3>
+            <p class="tl-org">IIT Guwahati × Kamrup District Administration</p>
+            <p class="tl-desc">Led test design and analysis for the Super 20 IIT-JEE preparation program, a joint initiative benefitting underprivileged students in the Kamrup region.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal-left" style="--d:.25s">
+          <div class="tl-dot tl-dot-rose"></div>
+          <div class="tl-card">
+            <span class="tl-period mono">Aug 2024 – Apr 2025</span>
+            <h3 class="tl-role">Peer Mentor — Saathi Counselling Club</h3>
+            <p class="tl-org">IIT Guwahati</p>
+            <p class="tl-desc">Provided peer support and mentorship to students, fostering mental well-being within the IIT Guwahati community.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal-left" style="--d:.3s">
+          <div class="tl-dot tl-dot-maroon"></div>
+          <div class="tl-card">
+            <span class="tl-period mono">Mar 2023 – May 2023</span>
+            <h3 class="tl-role">Teaching Intern</h3>
+            <p class="tl-org">Govt. Model Sanskriti SSS, Jhajjar, Haryana &amp; Marwari High School, Muzaffarpur</p>
+            <p class="tl-desc">Taught Higher Secondary science using bilingual instruction modes to overcome language barriers and improve student learning outcomes.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal-left" style="--d:.35s">
+          <div class="tl-dot tl-dot-rose"></div>
+          <div class="tl-card">
+            <span class="tl-period mono">One-off Event</span>
+            <h3 class="tl-role">Science Fair Judge</h3>
+            <p class="tl-org">Setauket Elementary School, New York</p>
+            <p class="tl-desc">Served as a science fair judge, encouraging scientific curiosity and critical thinking among young students.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ────────────────────────── EDUCATION ────────────────────────── -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-tag mono">// Education</p>
+        <h2 class="section-title">Academic Background</h2>
+      </div>
+
+      <div class="edu-grid">
+
+        <div class="edu-card reveal-up" style="--d:.05s">
+          <div class="edu-accent edu-accent-1"></div>
+          <div class="edu-year mono">Aug 2025 – Present</div>
+          <div class="edu-degree">Ph.D. Chemistry</div>
+          <div class="edu-inst">Stony Brook University</div>
+          <div class="edu-loc">New York, USA</div>
+          <div class="edu-gpa">GPA <span>3.84 / 4.0</span></div>
+          <div class="edu-desc">
+            Focus: Nonadiabatic molecular dynamics, electronic coherence, and quantum computational methods.
+          </div>
+        </div>
+
+        <div class="edu-card reveal-up" style="--d:.15s">
+          <div class="edu-accent edu-accent-2"></div>
+          <div class="edu-year mono">July 2023 – May 2025</div>
+          <div class="edu-degree">M.Sc. Chemistry</div>
+          <div class="edu-inst">IIT Guwahati</div>
+          <div class="edu-loc">Guwahati, India</div>
+          <div class="edu-gpa">CPI <span>8.88 / 10</span></div>
+          <div class="edu-desc">
+            Thesis: "Effect of fluorination on excited-state properties in N-Salicylideneaniline."
+            Supervisor: Prof. Aditya N. Panda.
+          </div>
+        </div>
+
+        <div class="edu-card reveal-up" style="--d:.25s">
+          <div class="edu-accent edu-accent-3"></div>
+          <div class="edu-year mono">July 2019 – May 2023</div>
+          <div class="edu-degree">B.Sc. B.Ed. (4-Year Integrated)</div>
+          <div class="edu-inst">Maharshi Dayanand University</div>
+          <div class="edu-loc">Rohtak, Haryana, India</div>
+          <div class="edu-gpa">Score <span>80.12%</span></div>
+          <div class="edu-desc">
+            Distinction, 1st Grade. Integrated science and education programme.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Coursework -->
+      <div class="coursework reveal-up">
+        <h3 class="cw-title mono">Relevant Coursework</h3>
+        <div class="cw-grid">
+          <div class="cw-block">
+            <h4 class="cw-cat">Physical Chemistry</h4>
+            <p>Quantum Chemistry · Group Theory &amp; Spectroscopy · Chemical Dynamics &amp; Electrochemistry · Statistical &amp; Classical Thermodynamics · Advanced Quantum Chemistry · Theoretical Chemistry* · Statistical Mechanics*</p>
+          </div>
+          <div class="cw-block">
+            <h4 class="cw-cat">Computational</h4>
+            <p>Computer and Chemistry · Applied Quantum Chemistry · Intro. Computational Structural Biology / Drug Discovery</p>
+          </div>
+          <div class="cw-block">
+            <h4 class="cw-cat">Organic Chemistry</h4>
+            <p>Principles of Organic Chemistry · Organic Reaction Mechanism · Bioorganic Chemistry · Applications of Spectroscopy</p>
+          </div>
+          <div class="cw-block">
+            <h4 class="cw-cat">Inorganic Chemistry</h4>
+            <p>Inorganic Reaction Mechanism &amp; Organometallics · Bio-inorganic Chemistry · Applied Inorganic Chemistry</p>
+          </div>
+        </div>
+        <p class="cw-note mono">* Currently pursuing</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ────────────────────────── ACHIEVEMENTS ────────────────────────── -->
+  <section id="achievements" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-tag mono">// Awards &amp; Achievements</p>
+        <h2 class="section-title">Scholastic <span class="accent">Excellence</span></h2>
+      </div>
+
+      <div class="ach-grid">
+
+        <div class="ach-hero reveal-up">
+          <div class="ach-glow"></div>
+          <p class="ach-label mono">CSIR-UGC NET (JRF) · July 2024</p>
+          <div class="ach-rank">AIR 77</div>
+          <p class="ach-desc">Top 0.2% out of 36,315 candidates<br>Junior Research Fellowship + Assistant Professor eligibility</p>
+        </div>
+
+        <div class="ach-card-sm reveal-up" style="--d:.1s">
+          <p class="ach-label mono">IACS MPST · 2023</p>
+          <div class="ach-rank-sm">AIR 18</div>
+          <p class="ach-desc">Integrated MS-PhD by IACS</p>
+        </div>
+
+        <div class="ach-card-sm reveal-up" style="--d:.15s">
+          <p class="ach-label mono">IIT JAM · 2023</p>
+          <div class="ach-rank-sm">AIR 265</div>
+          <p class="ach-desc">Out of 13,397 candidates</p>
+        </div>
+
+        <div class="ach-card-sm ach-badge reveal-up" style="--d:.2s">
+          <p class="ach-label mono">CTET · 2023</p>
+          <div class="ach-rank-sm ach-qualified">✓ Qualified</div>
+          <p class="ach-desc">Central Teacher Eligibility Test</p>
+        </div>
+
+        <div class="ach-card-sm ach-badge reveal-up" style="--d:.25s">
+          <p class="ach-label mono">IIT GATE · 2023</p>
+          <div class="ach-rank-sm ach-qualified">✓ Qualified</div>
+          <p class="ach-desc">Graduate Aptitude Test</p>
+        </div>
+
+        <div class="ach-card-sm ach-badge reveal-up" style="--d:.3s">
+          <p class="ach-label mono">NCERT CEE · 2019</p>
+          <div class="ach-rank-sm ach-qualified">✓ Qualified</div>
+          <p class="ach-desc">B.Sc.-B.Ed. Integrated Entrance</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ────────────────────────── CONTACT ────────────────────────── -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-tag mono">// Contact</p>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-sub">Open to research collaborations, academic discussions, and professional opportunities.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Info column -->
+        <div class="contact-info reveal-left">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <div>
+              <p class="ci-label mono">Academic Email</p>
+              <a href="mailto:dhiraj.raj@stonybrook.edu" class="ci-value">dhiraj.raj@stonybrook.edu</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <div>
+              <p class="ci-label mono">Personal Email</p>
+              <a href="mailto:r.drjha90@gmail.com" class="ci-value">r.drjha90@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </div>
+            <div>
+              <p class="ci-label mono">LinkedIn</p>
+              <a href="https://www.linkedin.com/in/dhiraj-raj-074b89179/" target="_blank" class="ci-value">dhiraj-raj-074b89179</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </div>
+            <div>
+              <p class="ci-label mono">GitHub</p>
+              <a href="https://github.com/dhirajraj13" target="_blank" class="ci-value">dhirajraj13</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
+            </div>
+            <div>
+              <p class="ci-label mono">Location</p>
+              <span class="ci-value">Stony Brook, NY 11794, USA</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form column -->
+        <div class="contact-form-wrap reveal-right">
+          <form id="contactForm" class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="field-group">
+              <label for="cName" class="field-label mono">Name</label>
+              <input id="cName" type="text" placeholder="Your name" class="field-input" required />
+            </div>
+            <div class="field-group">
+              <label for="cEmail" class="field-label mono">Email</label>
+              <input id="cEmail" type="email" placeholder="your@email.com" class="field-input" required />
+            </div>
+            <div class="field-group">
+              <label for="cSubject" class="field-label mono">Subject</label>
+              <input id="cSubject" type="text" placeholder="Research collaboration, inquiry…" class="field-input" />
+            </div>
+            <div class="field-group">
+              <label for="cMessage" class="field-label mono">Message</label>
+              <textarea id="cMessage" rows="5" placeholder="Your message…" class="field-input field-textarea" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message →</button>
+            <p id="formNote" class="form-note"></p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ────────────────────────── FOOTER ────────────────────────── -->
+  <footer id="footer">
+    <div class="footer-inner container">
+      <div class="footer-logo">DR<span class="accent">.</span></div>
+      <p class="footer-copy">© 2026 Dhiraj Raj · Computational Chemist · Stony Brook University</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/dhiraj-raj-074b89179/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/dhirajraj13" target="_blank">GitHub</a>
+        <a href="mailto:dhiraj.raj@stonybrook.edu">Email</a>
+        <a href="#research">Research</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
